@@ -1,0 +1,41 @@
+@charset 'utf-8'
+
+// Import a fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700')
+
+// Set your brand colors
+$purple: #6937ff
+$blue: #00adff
+$pink: #ff95d7
+$orange: #ff6e6e
+$brown: #a09fa7
+$white: white
+$black: black
+
+// Update Dls CSS global variables
+$family-sans-serif: "Nunito", sans-serif
+$grey-dark: $brown
+$primary: $purple
+$info: $blue
+$warning: $pink
+$danger: $orange
+$link: $purple
+$widescreen-enabled: false
+$fullhd-enabled: false
+
+// Update some of Dls CSS component variables
+$body-background-color: $white
+$control-border-width: 2px
+$input-border-color: transparent
+$input-shadow: none
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass"
+@import "../node_modules/bulma/sass/base/_all.sass"
+@import "../node_modules/bulma/sass/elements/button.sass"
+@import "../node_modules/bulma/sass/elements/container.sass"
+@import "../node_modules/bulma/sass/elements/form.sass"
+@import "../node_modules/bulma/sass/elements/title.sass"
+@import "../node_modules/bulma/sass/components/navbar.sass"
+@import "../node_modules/bulma/sass/layout/hero.sass"
+@import "../node_modules/bulma/sass/layout/section.sass"
