@@ -1,0 +1,52 @@
+/* line 3, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+.sb-docs-container {
+  padding-top: 143px;
+  padding-bottom: 192px;
+}
+
+/* line 7, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+.sb-docs-mb-100 {
+  margin-bottom: 100px !important;
+}
+
+/* line 11, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 144px;
+}
+
+/* line 17, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+/* line 25, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+.column .bg-primary {
+  padding: 25px;
+  border-radius: 3px;
+  color: white;
+}
+
+/* line 29, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+.column .bg-secondary {
+  padding: 25px;
+  border-radius: 3px;
+  color: white;
+}
+
+/* line 33, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+.bg-primary {
+  background: #6937ff;
+}
+
+/* line 35, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+.bg-secondary {
+  background: #a09fa7;
+}
+
+/*# sourceMappingURL=../css/docs.map */
