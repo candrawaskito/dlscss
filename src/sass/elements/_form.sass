@@ -1,4 +1,4 @@
-$input-color: $grey-darker !default
+$input-color: #333333 !default
 $input-background-color: $white !default
 $input-border-color: $grey-lighter !default
 $input-height: $control-height !default
@@ -36,27 +36,30 @@ $file-name-border-style: solid !default
 $file-name-border-width: 1px 1px 1px 0 !default
 $file-name-max-width: 16em !default
 
-$label-color: $grey-darker !default
-$label-weight: $weight-bold !default
+$label-color: #525357 !default
+$label-weight: $weight-semibold !default
 
 $help-size: $size-small !default
 
 =input
   @extend %control
   background-color: $input-background-color
-  border-color: $input-border-color
+  border-color: #dadadf
+  padding: 19px 15px
+  font-size: 14px
   color: $input-color
   +placeholder
-    color: rgba($input-color, 0.3)
+    color: #969698
   &:hover,
   &.sb-hovered
-    border-color: $input-hover-border-color
+    border-color: #dadadf
   &:focus,
   &.sb-focused,
   &:active,
   &.sb-active
-    border-color: $input-focus-border-color
-    box-shadow: $input-focus-box-shadow-size $input-focus-box-shadow-color
+    border-color: #dadadf
+    color: $input-color
+    box-shadow: none
   &[disabled]
     background-color: $input-disabled-background-color
     border-color: $input-disabled-border-color
@@ -399,7 +402,7 @@ $help-size: $size-small !default
 .label
   color: $label-color
   display: block
-  font-size: $size-normal
+  font-size: 14px
   font-weight: $label-weight
   &:not(:last-child)
     margin-bottom: 0.5em

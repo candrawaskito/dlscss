@@ -3035,34 +3035,37 @@ a.box:active {
 .input,
 .textarea {
   background-color: white;
-  border-color: transparent;
-  color: #363636;
+  border-color: #dadadf;
+  padding: 19px 15px;
+  font-size: 14px;
+  color: #333333;
   box-shadow: none;
   max-width: 100%;
   width: 100%; }
   .input::-moz-placeholder,
   .textarea::-moz-placeholder {
-    color: rgba(54, 54, 54, 0.3); }
+    color: #969698; }
   .input::-webkit-input-placeholder,
   .textarea::-webkit-input-placeholder {
-    color: rgba(54, 54, 54, 0.3); }
+    color: #969698; }
   .input:-moz-placeholder,
   .textarea:-moz-placeholder {
-    color: rgba(54, 54, 54, 0.3); }
+    color: #969698; }
   .input:-ms-input-placeholder,
   .textarea:-ms-input-placeholder {
-    color: rgba(54, 54, 54, 0.3); }
+    color: #969698; }
   .input:hover, .input.sb-hovered,
   .textarea:hover,
   .textarea.sb-hovered {
-    border-color: #b5b5b5; }
+    border-color: #dadadf; }
   .input:focus, .input.sb-focused, .input:active, .input.sb-active,
   .textarea:focus,
   .textarea.sb-focused,
   .textarea:active,
   .textarea.sb-active {
-    border-color: #6937ff;
-    box-shadow: 0 0 0 0.125em rgba(105, 55, 255, 0.25); }
+    border-color: #dadadf;
+    color: #333333;
+    box-shadow: none; }
   .input[disabled],
   .textarea[disabled] {
     background-color: whitesmoke;
@@ -3255,26 +3258,29 @@ a.box:active {
     padding-left: 1em; }
   .select select {
     background-color: white;
-    border-color: transparent;
-    color: #363636;
+    border-color: #dadadf;
+    padding: 19px 15px;
+    font-size: 14px;
+    color: #333333;
     cursor: pointer;
     display: block;
     font-size: 1em;
     max-width: 100%;
     outline: none; }
     .select select::-moz-placeholder {
-      color: rgba(54, 54, 54, 0.3); }
+      color: #969698; }
     .select select::-webkit-input-placeholder {
-      color: rgba(54, 54, 54, 0.3); }
+      color: #969698; }
     .select select:-moz-placeholder {
-      color: rgba(54, 54, 54, 0.3); }
+      color: #969698; }
     .select select:-ms-input-placeholder {
-      color: rgba(54, 54, 54, 0.3); }
+      color: #969698; }
     .select select:hover, .select select.sb-hovered {
-      border-color: #b5b5b5; }
+      border-color: #dadadf; }
     .select select:focus, .select select.sb-focused, .select select:active, .select select.sb-active {
-      border-color: #6937ff;
-      box-shadow: 0 0 0 0.125em rgba(105, 55, 255, 0.25); }
+      border-color: #dadadf;
+      color: #333333;
+      box-shadow: none; }
     .select select[disabled] {
       background-color: whitesmoke;
       border-color: whitesmoke;
@@ -3693,10 +3699,10 @@ a.box:active {
     font-size: 14px; }
 
 .label {
-  color: #363636;
+  color: #525357;
   display: block;
-  font-size: 1rem;
-  font-weight: 700; }
+  font-size: 14px;
+  font-weight: 600; }
   .label:not(:last-child) {
     margin-bottom: 0.5em; }
   .label.sb-small {
