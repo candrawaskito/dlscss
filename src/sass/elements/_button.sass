@@ -33,12 +33,18 @@ $button-static-border-color: $grey-lighter !default
 
 // The button sizes use mixins so they can be used at different breakpoints
 =button-small
-  border-radius: $radius-small
+  // border-radius: $radius-small
   font-size: $size-small
+  font-size: 12px
 =button-medium
-  font-size: $size-medium
+  // font-size: $size-medium
+  font-size: 14px
 =button-large
-  font-size: $size-large
+  // font-size: $size-large
+  font-size: 16px
+=button-xlarge
+  // font-size: $size-large
+  font-size: 16px
 
 .button
   @extend %control
@@ -47,6 +53,9 @@ $button-static-border-color: $grey-lighter !default
   border-color: $button-border-color
   border-width: $button-border-width
   color: $button-color
+  height: auto
+  text-transform: capitalize
+  letter-spacing: 0.1px
   cursor: pointer
   justify-content: center
   padding-bottom: $button-padding-vertical
@@ -152,11 +161,15 @@ $button-static-border-color: $grey-lighter !default
         background-color: transparent
         border-color: $color
         color: $color
+        &.sb-warning 
+          color: $warning !important
         &:hover,
         &:focus
           background-color: $color
           border-color: $color
           color: $color-invert
+          &.sb-warning 
+            color: white !important
         &.sb-loading
           &::after
             border-color: transparent transparent $color $color !important
@@ -211,6 +224,37 @@ $button-static-border-color: $grey-lighter !default
     border-radius: $radius-rounded
     padding-left: 1em
     padding-right: 1em
+  &.sb-rounded-20
+    border-radius: $radius-rounded-20
+  &.sb-sharp
+    border-radius: $radius-rounded-0
+  &.sb-transparent 
+    &.sb-danger 
+      background: rgba(255, 110, 110, 0.1)
+      color: $danger
+      &.sb-transparent-outline
+        border: 1px solid $danger
+    &.sb-warning
+      background: rgba(255, 149, 215, 0.1)
+      color: $warning !important
+      &.sb-transparent-outline
+        border: 1px solid $warning
+    &.sb-info
+      background: rgba(0, 173, 255, 0.1)
+      color: $info
+      &.sb-transparent-outline
+        border: 1px solid $info
+    &.sb-primary
+      background: rgba(105, 55, 255, 0.1)
+      color: $primary
+      &.sb-transparent-outline
+        border: 1px solid $primary
+  &.sb-uppercase 
+    text-transform: uppercase
+    letter-spacing: 1.75px
+  &.sb-secondary 
+    background: #a09fa7
+    color: white
 
 .buttons
   align-items: center
@@ -253,3 +297,18 @@ $button-static-border-color: $grey-lighter !default
     justify-content: center
   &.sb-right
     justify-content: flex-end
+
+.sb-warning
+  color: white !important
+
+.sb-small
+  padding: 5px 20px !important
+
+.sb-normal 
+  padding: 7px 24px !important
+
+.sb-medium 
+  padding: 13.5px 29px !important
+
+.sb-large 
+  padding: 20px 44px !important

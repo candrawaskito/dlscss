@@ -10,6 +10,17 @@
 }
 
 /* line 11, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+.block button {
+  margin-right: 30px;
+}
+
+/* line 14, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* line 19, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
 h1 {
   font-size: 60px;
   font-weight: bold;
@@ -17,7 +28,7 @@ h1 {
   margin-bottom: 144px;
 }
 
-/* line 17, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+/* line 25, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
 h3 {
   font-size: 30px;
   font-weight: 600;
@@ -25,26 +36,26 @@ h3 {
   margin-bottom: 30px;
 }
 
-/* line 25, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+/* line 33, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
 .column .bg-primary {
   padding: 25px;
   border-radius: 3px;
   color: white;
 }
 
-/* line 29, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+/* line 37, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
 .column .bg-secondary {
   padding: 25px;
   border-radius: 3px;
   color: white;
 }
 
-/* line 33, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+/* line 41, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
 .bg-primary {
   background: #6937ff;
 }
 
-/* line 35, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
+/* line 43, /Users/candrawaskito/Documents/Dev Stuff/Sebo Studio/Dev/rnd/dlscss/example/assets/sass/docs.sass */
 .bg-secondary {
   background: #a09fa7;
 }
