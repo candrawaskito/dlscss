@@ -2086,6 +2086,29 @@ a.box:active {
   white-space: nowrap; }
   .button strong {
     color: inherit; }
+  .button img {
+    margin-left: 66px;
+    width: 16px;
+    height: 16px; }
+    .button img.sb-large {
+      width: 18px;
+      height: 18px; }
+    .button img.sb-normal {
+      width: 14px;
+      height: 14px; }
+    .button img.sb-small {
+      width: 12px;
+      height: 12px; }
+  .button.sb-icons {
+    padding: 16px !important; }
+    .button.sb-icons img {
+      margin-left: 0 !important; }
+    .button.sb-icons.sb-large {
+      padding: 18px !important; }
+    .button.sb-icons.sb-normal {
+      padding: 14px !important; }
+    .button.sb-icons.sb-small {
+      padding: 12px !important; }
   .button .icon, .button .icon.sb-small, .button .icon.sb-medium, .button .icon.sb-large {
     height: 1.5em;
     width: 1.5em; }
