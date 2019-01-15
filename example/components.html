@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="../dist/css/dlscss.css">
     <link rel="stylesheet" href="../example/assets/css/docs.css">
 </head>
-<body>
+<body style="background-color: #f5f5f5;">
 
     <div class="container sb-docs-container">
         <h1>Components</h1>
 
         <h3>Navbar</h3>
-        <p></p>
+        <p>Use <strong>70 px - 100 px</strong> for navbar height area & <strong>14 px - 16px</strong> for menu text size</p>
 
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar navbar-70" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#">
                     <!-- <img src="#" width="112" height="28"> -->
@@ -32,7 +32,7 @@
             
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item">
+                    <a class="navbar-item sb-active">
                         About
                     </a>
                 
@@ -51,13 +51,156 @@
             
                 <div class="navbar-end">
                     <div class="navbar-item">
-                        <a class="button sb-outline sb-small sb-warning">
+                        <a class="button sb-outlined sb-small sb-warning">
                             Small Button
                         </a>
                     </div>
                 </div>
             </div>
         </nav>
+
+        <nav class="navbar navbar-80" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <!-- <img src="#" width="112" height="28"> -->
+                    Sebo Studio
+                </a>
+            
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item sb-active">
+                        About
+                    </a>
+                
+                    <a class="navbar-item">
+                        Service
+                    </a>
+
+                    <a class="navbar-item">
+                        Our Team
+                    </a>
+
+                    <a class="navbar-item">
+                        Project
+                    </a>
+                </div>
+            
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="button sb-outlined sb-small sb-warning">
+                            Small Button
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-100" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <!-- <img src="#" width="112" height="28"> -->
+                    Sebo Studio
+                </a>
+            
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item sb-active">
+                        About
+                    </a>
+                
+                    <a class="navbar-item">
+                        Service
+                    </a>
+
+                    <a class="navbar-item">
+                        Our Team
+                    </a>
+
+                    <a class="navbar-item">
+                        Project
+                    </a>
+                </div>
+            
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="button sb-outlined sb-small sb-warning">
+                            Small Button
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <h3>Tags</h3>
+        <p>Basics tags</p>
+        <div class="block">
+            <span class="tag sb-primary">Graphic Design</span>
+            <span class="tag sb-info">Logo</span>
+            <span class="tag sb-warning">Branding</span>
+            <span class="tag sb-danger">UI/UX</span>
+            <span class="tag sb-secondary">Website</span>
+        </div>
+        <div class="block">
+            <span class="tag sb-primary sb-rounded">Graphic Design</span>
+            <span class="tag sb-info sb-rounded">Logo</span>
+            <span class="tag sb-warning sb-rounded">Branding</span>
+            <span class="tag sb-danger sb-rounded">UI/UX</span>
+            <span class="tag sb-secondary sb-rounded">Website</span>
+        </div>
+
+        <p>Editable Tags</p>
+        <div class="block">
+            <div class="field sb-docs-tags is-grouped is-grouped-multiline">
+                <div class="control">
+                    <div class="tags has-addons">
+                        <a class="tag sb-primary">Graphic Design</a>
+                        <a class="tag sb-primary sb-delete"></a>
+                    </div>
+                </div>
+                
+                <div class="control">
+                    <div class="tags has-addons">
+                        <a class="tag sb-info">Logo</a>
+                        <a class="tag sb-info sb-delete"></a>
+                    </div>
+                </div>
+                
+                <div class="control">
+                    <div class="tags has-addons">
+                        <a class="tag sb-warning">Branding</a>
+                        <a class="tag sb-warning sb-delete"></a>
+                    </div>
+                </div>
+                
+                <div class="control">
+                    <div class="tags has-addons">
+                        <a class="tag sb-danger">UI/UX</a>
+                        <a class="tag sb-danger sb-delete"></a>
+                    </div>
+                </div>
+                
+                <div class="control">
+                    <div class="tags has-addons">
+                        <a class="tag sb-secondary">Website</a>
+                        <a class="tag sb-secondary sb-delete"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
 </body>

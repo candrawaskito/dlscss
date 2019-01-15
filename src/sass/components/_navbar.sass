@@ -46,6 +46,10 @@ $navbar-bottom-box-shadow-size: 0 -2px 0 0 !default
 
 $navbar-breakpoint: $desktop !default
 
+$navbar-70: 70px
+$navbar-80: 80px
+$navbar-100: 100px
+
 =navbar-fixed
   left: 0
   position: fixed
@@ -55,8 +59,15 @@ $navbar-breakpoint: $desktop !default
 .navbar
   background-color: $navbar-background-color
   min-height: $navbar-height
+  padding: 7px 20px
   position: relative
   z-index: $navbar-z
+  &.navbar-70
+    height: $navbar-70
+  &.navbar-80
+    height: $navbar-80
+  &.navbar-100
+    height: $navbar-100
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
@@ -88,14 +99,14 @@ $navbar-breakpoint: $desktop !default
           .navbar-link
             &:hover,
             &.sb-active
-              background-color: darken($color, 5%)
+              // background-color: darken($color, 5%)
               color: $color-invert
           .navbar-link
             &::after
               border-color: $color-invert
         .navbar-item.has-dropdown:hover .navbar-link,
         .navbar-item.has-dropdown.sb-active .navbar-link
-          background-color: darken($color, 5%)
+          // background-color: darken($color, 5%)
           color: $color-invert
         .navbar-dropdown
           a.navbar-item
@@ -157,6 +168,7 @@ body
   color: $navbar-item-color
   display: block
   line-height: 1.5
+  font-size: 14px
   padding: 0.5rem 0.75rem
   position: relative
   .icon
@@ -169,7 +181,7 @@ a.navbar-item,
   cursor: pointer
   &:hover,
   &.sb-active
-    background-color: $navbar-item-hover-background-color
+    // background-color: $navbar-item-hover-background-color
     color: $navbar-item-hover-color
 
 .navbar-item
@@ -297,10 +309,10 @@ a.navbar-item,
       .navbar-dropdown
         a.navbar-item
           &:hover
-            background-color: $navbar-dropdown-item-hover-background-color
+            // background-color: $navbar-dropdown-item-hover-background-color
             color: $navbar-dropdown-item-hover-color
           &.sb-active
-            background-color: $navbar-dropdown-item-active-background-color
+            // background-color: $navbar-dropdown-item-active-background-color
             color: $navbar-dropdown-item-active-color
   .navbar-burger
     display: none
@@ -336,7 +348,7 @@ a.navbar-item,
     flex-shrink: 0
   .navbar-start
     justify-content: flex-start
-    margin-right: auto
+    margin-left: auto
   .navbar-end
     justify-content: flex-end
     margin-left: auto
@@ -359,10 +371,10 @@ a.navbar-item,
     a.navbar-item
       padding-right: 3rem
       &:hover
-        background-color: $navbar-dropdown-item-hover-background-color
+        // background-color: $navbar-dropdown-item-hover-background-color
         color: $navbar-dropdown-item-hover-color
       &.sb-active
-        background-color: $navbar-dropdown-item-active-background-color
+        // background-color: $navbar-dropdown-item-active-background-color
         color: $navbar-dropdown-item-active-color
     .navbar.sb-spaced &,
     &.sb-boxed
@@ -414,9 +426,9 @@ a.navbar-item,
     &.sb-active
       color: $navbar-item-active-color
     &.sb-active:not(:hover)
-      background-color: $navbar-item-active-background-color
+      // background-color: $navbar-item-active-background-color
   .navbar-item.has-dropdown
     &:hover,
     &.sb-active
       .navbar-link
-        background-color: $navbar-item-hover-background-color
+        // background-color: $navbar-item-hover-background-color
