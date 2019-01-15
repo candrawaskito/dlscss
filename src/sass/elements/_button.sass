@@ -292,8 +292,56 @@ $button-static-border-color: $grey-lighter !default
     margin-bottom: -0.5rem
   &:not(:last-child)
     margin-bottom: 1rem
+  &.has-rounded
+    .buttons-group 
+      border-radius: 50px
+      border: 1px solid #d4d8d9
+      padding: 1.2px
+      .button 
+        margin-bottom: 0
+        font-size: 14px
+        border: 1px solid transparent
+      &.sb-primary,
+      &.sb-info,
+      &.sb-warning,
+      &.sb-danger,
+      &.sb-secondary
+        .sb-active 
+          border-radius: 50px
+      &.sb-primary
+        .sb-active 
+          background: $primary
+          color: $white
+      &.sb-info
+        .sb-active
+          background: $info
+          color: $white
+      &.sb-warning
+        .sb-active
+          background: $warning
+          color: $white
+      &.sb-danger
+        .sb-active
+          background: $danger
+          color: $danger
+      &.sb-secondary
+        .sb-active
+          background: $brown
+          color: $white
   &.has-addons
     .button
+      border: 1px solid #d4d8d9
+      font-size: 14px
+      &.sb-primary 
+        border: 1px solid $primary
+      &.sb-info 
+        border: 1px solid $info
+      &.sb-warning
+        border: 1px solid $warning
+      &.sb-danger 
+        border: 1px solid $danger
+      &.sb-secondary
+        border: 1px solid $brown
       &:not(:first-child)
         border-bottom-left-radius: 0
         border-top-left-radius: 0
