@@ -1952,7 +1952,7 @@ a.navbar-item,
   -webkit-overflow-scrolling: touch;
   align-items: stretch;
   display: flex;
-  font-size: 1rem;
+  font-size: 14px;
   justify-content: space-between;
   overflow: hidden;
   overflow-x: auto;
@@ -1961,11 +1961,11 @@ a.navbar-item,
     align-items: center;
     border-bottom-color: #dbdbdb;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
-    color: #a09fa7;
+    border-bottom-width: 3px;
+    color: #333333;
     display: flex;
     justify-content: center;
-    margin-bottom: -1px;
+    margin-bottom: -3px;
     padding: 0.5em 1em;
     vertical-align: top; }
     .tabs a:hover {
@@ -1974,13 +1974,14 @@ a.navbar-item,
   .tabs li {
     display: block; }
     .tabs li.sb-active a {
-      border-bottom-color: #6937ff;
-      color: #6937ff; }
+      border-bottom-color: #00adff;
+      color: #333333;
+      font-weight: 600; }
   .tabs ul {
     align-items: center;
     border-bottom-color: #dbdbdb;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: 3px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
@@ -2004,7 +2005,7 @@ a.navbar-item,
   .tabs.sb-right ul {
     justify-content: flex-end; }
   .tabs.sb-boxed a {
-    border: 1px solid transparent;
+    border: 3px solid transparent;
     border-radius: 4px 4px 0 0; }
     .tabs.sb-boxed a:hover {
       background-color: whitesmoke;
@@ -2019,7 +2020,7 @@ a.navbar-item,
   .tabs.sb-toggle a {
     border-color: #dbdbdb;
     border-style: solid;
-    border-width: 1px;
+    border-width: 3px;
     margin-bottom: 0;
     position: relative; }
     .tabs.sb-toggle a:hover {
@@ -2027,7 +2028,7 @@ a.navbar-item,
       border-color: #b5b5b5;
       z-index: 2; }
   .tabs.sb-toggle li + li {
-    margin-left: -1px; }
+    margin-left: -3px; }
   .tabs.sb-toggle li:first-child a {
     border-radius: 4px 0 0 4px; }
   .tabs.sb-toggle li:last-child a {
