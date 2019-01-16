@@ -83,7 +83,7 @@ $navbar-100: 100px
           &:hover,
           &.sb-active
             background-color: darken($color, 5%)
-            color: $color-invert
+            color: #333333
         .navbar-link
           &::after
             border-color: $color-invert
@@ -100,7 +100,7 @@ $navbar-100: 100px
             &:hover,
             &.sb-active
               // background-color: darken($color, 5%)
-              color: $color-invert
+              color: #333333
           .navbar-link
             &::after
               border-color: $color-invert
@@ -171,6 +171,10 @@ body
   font-size: 14px
   padding: 0.5rem 0.75rem
   position: relative
+
+  &.sb-active 
+    font-weight: 600
+
   .icon
     &:only-child
       margin-left: -0.25rem
@@ -182,7 +186,7 @@ a.navbar-item,
   &:hover,
   &.sb-active
     // background-color: $navbar-item-hover-background-color
-    color: $navbar-item-hover-color
+    color: #333333
 
 .navbar-item
   display: block
