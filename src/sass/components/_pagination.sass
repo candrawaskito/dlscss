@@ -1,4 +1,4 @@
-$pagination-color: $grey-darker !default
+$pagination-color: #333333 !default
 $pagination-border-color: $grey-lighter !default
 $pagination-margin: -0.25rem !default
 $pagination-min-width: $control-height !default
@@ -16,7 +16,7 @@ $pagination-disabled-color: $grey !default
 $pagination-disabled-background-color: $grey-lighter !default
 $pagination-disabled-border-color: $grey-lighter !default
 
-$pagination-current-color: $link-invert !default
+$pagination-current-color: $white !default
 $pagination-current-background-color: $link !default
 $pagination-current-border-color: $link !default
 
@@ -27,6 +27,171 @@ $pagination-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
 .pagination
   font-size: $size-normal
   margin: $pagination-margin
+  &-border
+    &.sb-info
+      .sb-current
+        background: transparent !important
+        border-bottom: 2px solid $primary !important
+        border: none
+        color: $primary !important
+        border-radius: 0
+      .pagination-link
+        border-bottom: 2px solid transparent !important
+        border-radius: 0
+        &:hover
+          color: $primary !important
+          border: none
+          border-bottom: 2px solid $primary !important
+      .pagination-previous,
+      .pagination-next
+        border: none
+        &:hover 
+          border: none
+    &.sb-info
+      .sb-current
+        background: transparent !important
+        border-bottom: 2px solid $info !important
+        border: none
+        color: $info !important
+        border-radius: 0
+      .pagination-link
+        border-bottom: 2px solid transparent !important
+        border-radius: 0
+        &:hover
+          color: $info !important
+          border: none
+          border-bottom: 2px solid $info !important
+      .pagination-previous,
+      .pagination-next
+        border: none
+        &:hover 
+          border: none
+    &.sb-warning
+      .sb-current
+        background: transparent !important
+        border-bottom: 2px solid $warning !important
+        border: none
+        color: $warning !important
+        border-radius: 0
+      .pagination-link
+        border-bottom: 2px solid transparent !important
+        border-radius: 0
+        &:hover
+          color: $warning !important
+          border: none
+          border-bottom: 2px solid $warning !important
+      .pagination-previous,
+      .pagination-next
+        border: none
+        &:hover 
+          border: none
+    &.sb-danger
+      .sb-current
+        background: transparent !important
+        border-bottom: 2px solid $danger !important
+        border: none
+        color: $danger !important
+        border-radius: 0
+      .pagination-link
+        border-bottom: 2px solid transparent !important
+        border-radius: 0
+        &:hover
+          color: $danger !important
+          border: none
+          border-bottom: 2px solid $danger !important
+      .pagination-previous,
+      .pagination-next
+        border: none
+        &:hover 
+          border: none
+    &.sb-secondary
+      .sb-current
+        background: transparent !important
+        border-bottom: 2px solid $brown !important
+        border: none
+        color: $brown !important
+        border-radius: 0
+      .pagination-link
+        border-bottom: 2px solid transparent !important
+        border-radius: 0
+        &:hover
+          color: $brown !important
+          border: none
+          border-bottom: 2px solid $brown !important
+      .pagination-previous,
+      .pagination-next
+        border: none
+        &:hover 
+          border: none
+  &.sb-primary 
+    .sb-current
+      background: $primary
+      border-color: $primary
+      &:hover 
+        color: $white !important
+    .pagination-link
+      &:hover
+        border-color: $primary
+        color: $primary
+    .pagination-previous,
+    .pagination-next 
+      &:hover
+        border-color: $primary
+  &.sb-info 
+    .sb-current
+      background: $info
+      border-color: $info
+      &:hover 
+        color: $white
+    .pagination-link
+      &:hover
+        border-color: $info
+    .pagination-previous,
+    .pagination-next 
+      &:hover
+        border-color: $info
+  &.sb-warning 
+    .sb-current
+      background: $warning
+      border-color: $warning
+      &:hover 
+        color: $white !important
+    .pagination-link
+      &:hover
+        border-color: $warning
+        color: $warning
+    .pagination-previous,
+    .pagination-next 
+      &:hover
+        border-color: $warning
+  &.sb-danger 
+    .sb-current
+      background: $danger
+      border-color: $danger
+      &:hover 
+        color: $white !important
+    .pagination-link
+      &:hover
+        border-color: $danger
+        color: $danger
+    .pagination-previous,
+    .pagination-next 
+      &:hover
+        border-color: $danger
+  &.sb-secondary 
+    .sb-current
+      background: $brown
+      border-color: $brown
+      &:hover 
+        color: $white !important
+    .pagination-link
+      &:hover
+        border-color: $brown
+        color: $brown
+    .pagination-previous,
+    .pagination-next 
+      &:hover
+        border-color: $brown
   // Sizes
   &.sb-small
     font-size: $size-small
@@ -56,7 +221,7 @@ $pagination-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
 .pagination-ellipsis
   @extend %control
   @extend %unselectable
-  font-size: 1em
+  font-size: 14px
   padding-left: 0.5em
   padding-right: 0.5em
   justify-content: center
@@ -66,7 +231,7 @@ $pagination-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
 .pagination-previous,
 .pagination-next,
 .pagination-link
-  border-color: $pagination-border-color
+  // border-color: $pagination-border-color
   color: $pagination-color
   min-width: $pagination-min-width
   &:hover
@@ -93,7 +258,9 @@ $pagination-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
   &.sb-current
     background-color: $pagination-current-background-color
     border-color: $pagination-current-border-color
-    color: $pagination-current-color
+    color: $white
+    &:hover 
+      color: $white
 
 .pagination-ellipsis
   color: $pagination-ellipsis-color
