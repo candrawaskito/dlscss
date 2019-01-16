@@ -4515,6 +4515,43 @@ a.tag:hover {
   .subtitle.sb-7 {
     font-size: 0.75rem; }
 
+.tooltip {
+  position: relative;
+  display: inline-block; }
+  .tooltip-rounded .tooltiptext {
+    border-radius: 50px !important; }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 12px;
+  width: 150px;
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }
+
 .heading {
   display: block;
   font-size: 11px;
